@@ -17,7 +17,7 @@
 ### PLATFORM
 $(call inherit-product, device/samsung/exynos9810-common/platform.mk)
 ### PROPRIETARY VENDOR FILES
-#$(call inherit-product, vendor/samsung/starlte/starlte-vendor.mk)
+$(call inherit-product, vendor/samsung/starlte/starlte-vendor.mk)
 
 ### DALVIK
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)

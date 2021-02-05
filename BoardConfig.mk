@@ -14,7 +14,7 @@
 # limitations under the License.
 
 include device/samsung/exynos9810-common/BoardConfigPlatform.mk
-#include vendor/samsung/starlte/BoardConfigVendor.mk
+include vendor/samsung/starlte/BoardConfigVendor.mk
 
 DEVICE_PATH := device/samsung/starlte
 
