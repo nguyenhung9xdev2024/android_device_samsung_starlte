@@ -161,6 +161,7 @@ vendor/lib/libSEF.quram.so
 vendor/lib/lib_SamsungRec_06006.so
 vendor/lib/libacryl.so
 vendor/lib/libacryl_plugin_slsi_hdr10.so
+vendor/lib/libcnn.so
 vendor/lib/libcsc.so
 vendor/lib/libexynoscamera3.so
 vendor/lib/libgiantmscl.so
@@ -211,8 +212,9 @@ vendor/firmware/score/camera2/score_mc_pmw.bin
 vendor/firmware/score/camera2/score_kc1_dmb.bin
 vendor/firmware/score/camera2/score_kc1_pmw.bin
 vendor/firmware/score/camera2/score_mc_dmb.bin
-vendor/firmware/ois_fw_dom.bin
 vendor/firmware/bcm4361B2_semco.hcd
+vendor/firmware/ois_fw_dom.bin
+vendor/firmware/ois_fw_sec.bin
 
 ### CHARGER_FIRMWARE
 vendor/firmware/mfc_fw.bin
@@ -261,8 +263,9 @@ vendor/lib64/libion_exynos.so
 
 # KEYMASTER
 vendor/lib64/hw/keystore.mdfpp.so
-vendor/lib64/libskeymaster3device.so
+vendor/lib64/libkeymaster2_mdfpp.so
 vendor/lib64/libkeymaster_helper_vendor.so
+vendor/lib64/libskeymaster3device.so
 
 ## Mobicore TEE
 vendor/app/mcRegistry/00060308060501020000000000000000.tlbin
@@ -396,6 +399,9 @@ vendor/lib64/libRSDriverArm.so
 vendor/bin/cbd
 vendor/bin/hw/rild
 vendor/bin/secril_config_svc
+vendor/etc/init/init.baseband.rc
+vendor/etc/init/init.vendor.rilchip.rc
+vendor/etc/init/init.vendor.rilcommon.rc
 vendor/etc/plmn_delta.bin
 vendor/etc/plmn_delta_attaio.bin
 vendor/etc/plmn_delta_hktw.bin
@@ -470,6 +476,7 @@ vendor/lib64/vendor.samsung_slsi.hardware.configstore@1.0.so
 
 ### SAMSUNG_SLSI_EDEN_NEURALNETWORKS
 vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-armnn
+vendor/etc/armnn_kernel.bin
 vendor/etc/init/android.hardware.neuralnetworks@1.2-service-armnn.rc
 
 ### SAMSUNG_SLSI_IVA
@@ -566,6 +573,8 @@ vendor/lib64/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0.so
 
 # WIFI
 vendor/bin/hw/macloader
+vendor/etc/init/wifi.rc
+vendor/etc/init/wifi_brcm.rc
 vendor/etc/wifi/bcmdhd_clm.blob
 vendor/etc/wifi/bcmdhd_mfg.bin_b0
 vendor/etc/wifi/bcmdhd_mfg.bin_b2
