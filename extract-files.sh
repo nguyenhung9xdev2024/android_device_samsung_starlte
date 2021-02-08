@@ -61,6 +61,9 @@ function blob_fixup() {
         vendor/lib/libsensorlistener.so)
             "${PATCHELF}" --add-needed libshim_sensorndkbridge.so "${2}"
             ;;
+        vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-armnn)
+            "${PATCHELF}" --add-needed libdemangle.so "${2}"
+            ;;
     esac
 }
 
