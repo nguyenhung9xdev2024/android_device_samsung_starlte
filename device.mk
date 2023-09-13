@@ -22,6 +22,19 @@ $(call inherit-product, vendor/samsung/starlte/starlte-vendor.mk)
 ### DALVIK
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# OpenGapps
+GAPPS_VARIANT := pico
+
+GAPPS_EXCLUDED_PACKAGES += \
+    GearheadStub \
+    DialerFramework \
+    GoogleTTS \
+    PackageInstallerGoogle \
+    SetupWizard
+    #CalSync
+
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)  
+
 DEVICE_PATH := device/samsung/starlte
 
 DEVICE_PACKAGE_OVERLAYS += \
